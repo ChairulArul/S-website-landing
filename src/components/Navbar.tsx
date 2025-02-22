@@ -71,6 +71,7 @@ function NavBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              className="poppins-regular"
             >
               <MenuIcon />
             </IconButton>
@@ -100,6 +101,7 @@ function NavBar() {
 
           {/* MENU NORMAL (UNTUK DESKTOP) */}
           <Box
+            className="poppins-regular"
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },

@@ -3,6 +3,7 @@ import NavBar from "./components/Navbar";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AboutUs from "./components/AboutUs";
 // import imagePath from "./assets/your_image_icon.png";
 function App() {
   // setup aos
@@ -17,6 +18,7 @@ function App() {
     <div>
       <NavBar />
       <Header />
+      <AboutUs />
     </div>
   );
 }
