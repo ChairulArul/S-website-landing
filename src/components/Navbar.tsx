@@ -9,7 +9,10 @@ import MenuItem from "@mui/material/MenuItem";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
-import MenuIcon from "@mui/icons-material/Menu"; // <- Tambahkan ini
+import MenuIcon from "@mui/icons-material/Menu";
+
+// import poopins font
+import "../index.css";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -38,7 +41,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ mb: 1 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Nama Website */}
@@ -47,16 +50,16 @@ function NavBar() {
             noWrap
             component="a"
             href="#"
+            className="poppins-bold"
             sx={{
               flexGrow: 1,
-              fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            S - Website
+            S - building
           </Typography>
 
           {/* MENU HAMBURGER UNTUK MOBILE */}
